@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header id="headsection">
+        <h2 class="header-class-element" id="header-2">Name</h2>
+            
+        <nav class="header-class-element" id="navbar" >
+            <ul id="navbar-list">
+                <li class="navlist" id="first-child">Home</li>
+                <li class="navlist">About</li>
+                <li class="navlist">Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="bodysection"></section>
+    
+    <div class="fab" onclick="showForm()">
+        <i class="fa-solid fa-user-plus" id="user-icon"></i>
+    </div>
+
+    <div class="form">
+        <h2>Add Employee</h2>
+        <form onsubmit="addUser(event)">
+            <input required type="text" id="user-name" class="empform" placeholder="Name">
+            <input required type="number" id="user-salary" class="empform" placeholder="Salary">
+            <select required type="text" id="user-position" class="empform">
+                <option class="optionMenu">Position</option>
+                <option class="optionMenu">CEO</option>
+                <option class="optionMenu">Manager</option>
+                <option class="optionMenu">HR</option>
+            </select>
+            <input required type="text" id="user-age" class="empform" placeholder="Age">
+            <input required type="text" id="user-image" class="empform" placeholder="Imagelink">
+            <button type="submit" id="add-button">Add <i class="fa-solid fa-user-plus" id="add-icon"></i></button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
